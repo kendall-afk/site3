@@ -1,0 +1,103 @@
+@media screen and (min-width: 500px){
+@media screen and (max-width: 5000px){
+#wrapper{
+ display: grid;
+ grid-template-columns: 1fr 3fr 1fr;
+ grid-auto-rows: minmax(50px, auto); 
+ grid-column-gap: 10px;
+	grid-row-gap: 10px;
+ grid-template-areas: 
+ "hd hd hd"
+ "nv sc as"
+ ". sc as"
+ ". sc ."
+ "ft ft ft"; 
+	}}}
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	text-align:left;
+	background-color:#bbbbbb;
+}
+
+header{
+	background-color: grey;
+	border-radius: 10px;
+	height:100px;
+	grid-area: hd;
+}
+
+nav{
+	border: solid;
+	border-color:black;
+	border-radius: 20px;
+	background:grey;
+	grid-area: nv;
+}
+section{
+	text-align: center;
+	grid-area: sc;
+}
+aside{
+	background:grey;
+	border: solid 1px black;
+	border-radius:10px;
+	border:solid;
+	border-color:black;
+	grid-area: as;
+	
+}
+
+table{
+	border:0px;
+	
+}
+
+header h1{
+	color:black;
+	background-color:grey;
+}
+
+h1{
+	text-align: center;
+	color:black;
+}
+h2{
+	color:black;
+}
+nav li a{
+	text-decoration: none;
+	color:black;
+}
+nav li a:visited{
+	color:#801080;
+}
+nav li a:hover{
+	color:#ff80ff;
+	background-color:grey;
+	width:100px;
+}
+
+aside h1{
+	color:black;
+}
+aside img{
+	border: solid 1px;
+	border-color:black;
+	margin-left:5px;
+}
+aside th{
+	font-weight:bold;
+}
+em{
+	color:#000080;
+}
+p{
+margin-left:30px;
+}
+footer{
+	color:black;
+	background-color: grey;
+	grid-area: ft;
+  margin: 10px;
+	text-align: left;
+}
